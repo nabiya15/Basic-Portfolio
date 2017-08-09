@@ -119,7 +119,7 @@ nav a:hover{
 	width: 100%;
 	max-width: 650px;
  	background:#fff;
-    margin: 0 0 40px;
+    margin: 0 0 50px;
  	padding: 30px;
 	overflow: auto;
 	border: 1px solid #ddd;
@@ -144,7 +144,7 @@ nav a:hover{
 	width: 100%;
 	max-width: 270px;
  	background: #fff;
- 	margin-bottom: 20px; 
+ 	margin-bottom: 50px; 
  	border: 1px solid #ddd;
  	padding-left: 3px;
 }
@@ -204,7 +204,7 @@ footer {
 .work {
   position: relative;
   float: left;
-  width: 274px;
+  width: 270px;
   margin: 20px 0 25px;
   overflow: auto;
 }
@@ -260,43 +260,71 @@ input[type=text,textarea]:focus {
 }
 
 /* mobile responsiveness */
-@media screen and (max-width: 959px) {
-	.content{
-		width: 100%;
-		max-width: inherit;
-		margin: auto;
-	}
-
-	.sidebar{
-		width: 100%;
-		max-width: inherit;
-		margin:30px auto 50px auto;
-	}
-	
-}
-
 
 @media screen and (max-width: 640px) {
 	.content{
-		width: 100%;
 		max-width: inherit;
+		width: 100%;
 		margin: auto;
 		margin-top: 50px;
 	}
 
 	.sidebar{
-		width: 100%;
 		max-width: inherit;
+		width: 100%;
 		margin:30px auto 50px auto;
 	}
 	#header{
-		max-width:inherit;
 		width: 100%; 
 	}
 	nav{
-		max-width: inherit;
 		width: 100%;
 		text-align: center;
+	}
+	.my-img{
+		width: 100%;
+		height: auto;
+	}
+
+	.work{
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.content{
+		max-width: inherit;
+		width: 100%;
+		margin: auto;
+		margin-top: 50px;
+	}
+
+	.sidebar{
+		max-width: inherit;
+		width: 100%;
+		margin:30px auto 50px auto;
+	}
+
+	.my-img{
+		height: 200px;
+		width: 200px;
+		padding: 20px;
+		float: left;
+	}
+	
+	
+}
+
+@media screen and (max-width: 980px) {
+	.my-img{
+		width: 100%;
+		height: auto;
+	}
+
+	.work{
+		width: 100%;
+		height: auto;
 	}
 	
 }
